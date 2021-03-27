@@ -43,4 +43,8 @@ class HomeController extends Controller
     {
         return view('customers');
     }
+    public function accordion()
+    {
+        return view('accordion');
+    }
 }

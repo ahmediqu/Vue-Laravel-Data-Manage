@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "vform": "^1.0.1",
+        "vue-multilevel-accordion": "^1.0.8",
         "vue-progressbar": "^0.7.5",
         "vue-snotify": "^3.2.1"
     }

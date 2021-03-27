@@ -107,6 +107,7 @@ export default {
     },
     mounted() {
         this.getCustomers();
+        console.log(window.location.origin);
     },
     methods: {
         getCustomers() {

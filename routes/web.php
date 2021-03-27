@@ -25,6 +25,7 @@ Auth::routes();
 Route::apiResource('customers', CustomerController::class);
 Route::get('category', [ HomeController::class, 'category'])->name('category');
 Route::get('api/customers', [ HomeController::class, 'customers'])->name('api.customers');
+Route::get('api/accordion', [ HomeController::class, 'accordion'])->name('api.accordion');
 Route::get('products', [ HomeController::class, 'product'])->name('product');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

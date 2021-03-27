@@ -4,6 +4,8 @@ window.Vue = require('vue').default;
 import VueProgressBar from 'vue-progressbar';
 import Snotify, { SnotifyPosition } from 'vue-snotify';
 import { Form, HasError, AlertError } from 'vform';
+import MultilevelAccordion from "vue-multilevel-accordion";
+
 window.Form = Form;
 const snotifyOptions = {
     toast: {
@@ -36,6 +38,8 @@ Vue.component('product-component', require('./components/Product.vue').default);
 Vue.component('pagination-component', require('./components/core/Pagenation').default);
 Vue.component('customers-component', require('./components/Customers').default);
 Vue.component('pagination-component', require('./components/core/Pagination').default);
+Vue.component('accordion-component', require('./components/core/Accordion').default);
+Vue.component('faq-component', require('./components/core/Faq').default);
 Vue.component(HasError.name, HasError);
 Vue.component(AlertError.name, AlertError);
 
