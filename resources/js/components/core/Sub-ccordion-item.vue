@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <button class="btn btn-info" @click="toggle">
+            <button class="btn btn-info" @click="subToggle">
                 <div v-if="isOpen">
                     close
                     <i class="fas fa-chevron-down"></i>
@@ -12,11 +12,11 @@
             </button>
         </div>
         <div>
-            <h3 v-text="item.title" @click="toggle"></h3>
+            <h3 v-text="item.title" @click="subToggle"></h3>
             <div v-show="isOpen">
                 {{ item.body }}
 
-                <sub-accordion :items="subQuestions" />
+
 
             </div>
         </div>
@@ -49,8 +49,8 @@ export default {
         }
     },
     methods:{
-        toggle() {
-            this.$emit('toggled', this.$vnode.key);
+        subToggle() {
+            this.$emit('toggledd', this.$vnode.key);
         }
     }
 }

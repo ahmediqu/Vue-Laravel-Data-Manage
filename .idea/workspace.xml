@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c5e874c-c33c-49d9-818b-f2851c38da36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/core/Accordion-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/core/Multi-accordion.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/core/Sub-accordian.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/core/Sub-ccordion-item.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/core/Accordion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Accordion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/core/Accordion-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Accordion-item.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/core/Faq.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/core/Faq.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,12 +151,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components/core" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\LaravelVusJs\resources\js\components\core" />
       <recent name="C:\laragon\www\LaravelVusJs\resources\views" />
     </key>
   </component>
@@ -175,7 +178,8 @@
       <workItem from="1615394054633" duration="12550000" />
       <workItem from="1616353327304" duration="509000" />
       <workItem from="1616514780093" duration="15479000" />
-      <workItem from="1616839792631" duration="5909000" />
+      <workItem from="1616839792631" duration="7239000" />
+      <workItem from="1616859324852" duration="2546000" />
     </task>
     <servers />
   </component>

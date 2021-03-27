@@ -1,13 +1,13 @@
 <template>
     <div>
         <div class="container">
-            <h3 class="text-center"> Faq </h3>
             <div class="row">
                 <div class="col-md-8">
-                    <div>
-                        <Accordion :items="questions">
-                        </Accordion>
-                    </div>
+
+                  <h3>Other accordian</h3>
+                    <multi-accordion :items="subQuestions">
+                    </multi-accordion>
+
                 </div>
             </div>
         </div>
@@ -17,26 +17,13 @@
 <script>
 import Accordion from "./Accordion";
 export default {
-    name: "Faq",
+    name: "Multi-accordion",
     components:{
-        Accordion,
+        Accordion
     },
     data() {
         return {
-            questions: [
-                {
-                    title: 'First One',
-                    body: 'First ONe body'
-                },
-                {
-                    title: 'Second One',
-                    body: 'Second ONe body'
-                },
-                {
-                    title: 'Third One',
-                    body: 'Third ONe body'
-                },
-            ],
+            activeItemIndex: null,
             subQuestions: [
                 {
                     title: 'Sub First One',
@@ -52,10 +39,15 @@ export default {
                 }
             ],
         }
+    },
+    methods:{
+        onToggle(index) {
+            if(this.activeItemIndex==index) {
+                return this.activeItemIndex=null;
+            }
+            this.activeItemIndex = index
+        }
     }
+
 }
 </script>
-
-<style scoped>
-
-</style>
