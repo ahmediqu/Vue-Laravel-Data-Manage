@@ -3,26 +3,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div>
-                        <button class="btn btn-info" @click="isOpen =! isOpen">
-                            <div v-if="isOpen">
-                                close
-<!--                                <i class="fas fa-chevron-down"></i>-->
-                            </div>
-                            <div v-else>
-                                <span>open</span>
-                            </div>
-                        </button>
-                    </div>
-                    <div>
-                        <h3 v-text="title" @click="isOpen =! isOpen"></h3>
-                        <div v-html="body" v-show="isOpen">
+                    <accordion-item
+                        v-for="(item,index) in items"
+                        :item="item"
+                        :key="index"
+                        @toggled="onToggle"
+                        :is-open="activeItemIndex == index"
+                    >
 
-                        </div>
-                    </div>
+                    </accordion-item>
 
                 </div>
-                <slot></slot>
             </div>
         </div>
     </div>
@@ -31,18 +22,21 @@
 <script>
 export default {
     name: "Accordion",
-    props:{
-        title: '',
-        body:'',
+    props: {
+        items: ''
     },
     data() {
         return {
-            isOpen: false,
+            activeItemIndex: null,
+        }
+    },
+    methods:{
+        onToggle(index) {
+            if(this.activeItemIndex==index) {
+                return this.activeItemIndex=null;
+            }
+            this.activeItemIndex = index
         }
     }
 }
 </script>
-
-<style scoped>
-
-</style>

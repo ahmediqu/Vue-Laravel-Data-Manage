@@ -39,6 +39,7 @@ Vue.component('pagination-component', require('./components/core/Pagenation').de
 Vue.component('customers-component', require('./components/Customers').default);
 Vue.component('pagination-component', require('./components/core/Pagination').default);
 Vue.component('accordion-component', require('./components/core/Accordion').default);
+Vue.component('accordion-item', require('./components/core/Accordion-item').default);
 Vue.component('faq-component', require('./components/core/Faq').default);
 Vue.component(HasError.name, HasError);
 Vue.component(AlertError.name, AlertError);
