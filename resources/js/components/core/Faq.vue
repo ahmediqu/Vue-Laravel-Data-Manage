@@ -4,9 +4,8 @@
             <h3 class="text-center"> Faq </h3>
             <div class="row">
                 <div class="col-md-8">
-                    <div v-for="(question, index) in questions">
-                        <accordion-component :title="question.title" :body="question.body">
-
+                    <div>
+                        <accordion-component :items="questions">
                         </accordion-component>
                     </div>
                 </div>
