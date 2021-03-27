@@ -38,9 +38,12 @@ Vue.component('product-component', require('./components/Product.vue').default);
 Vue.component('pagination-component', require('./components/core/Pagenation').default);
 Vue.component('customers-component', require('./components/Customers').default);
 Vue.component('pagination-component', require('./components/core/Pagination').default);
-Vue.component('accordion-component', require('./components/core/Accordion').default);
+// Vue.component('accordion-component', require('./components/core/Accordion').default);
 Vue.component('accordion-item', require('./components/core/Accordion-item').default);
 Vue.component('faq-component', require('./components/core/Faq').default);
+Vue.component('multi-accordion', require('./components/core/Multi-accordion').default);
+Vue.component('sub-accordion', require('./components/core/Sub-accordian').default);
+Vue.component('sub-accordion-item', require('./components/core/Sub-ccordion-item').default);
 Vue.component(HasError.name, HasError);
 Vue.component(AlertError.name, AlertError);
 
